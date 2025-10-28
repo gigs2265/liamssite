@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Purgatory.css" />
+    <link rel="stylesheet" href="Mainpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap"
+      rel="stylesheet"
+    />
+    <title>Purgatory</title>
+  </head>
+  <body>
+    <div id="banner">
+      <h1 id="bannertxt">Purgatory</h1>
+      <div id="box1">
+        <h2 id="h2">A Biblical Defence for Catholicism</h2>
+      </div>
+    </div>
+    <nav class="button-bar" role="navigation" aria-label="Main">
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="mainNav"
+        aria-label="Open menu"
+      >
+        ☰ Menu
+      </button>
+
+      <div class="button-container" id="mainNav">
+        <a class="button" href="index.html">Worship and Art</a>
+        <a class="button" href="Information.html">Sinless Mary</a>
+        <a class="button" href="Intercession.html">Intercession</a>
+        <a class="button" href="Scripture and Tradition.html"
+          >Scripture and Tradition</a
+        >
+        <a class="button" href="Peters Primacy.html">Peter's Primacy as Pope</a>
+        <a class="button" href="Eucharist.html">Eucharist</a>
+        <a class="button" href="Confession.html">Confession</a>
+        <a class="button" href="Salvation.html">Salvation</a>
+        <a class="button" href="Divorce.html">Divorce</a>
+        <a class="button" href="papact.html">Metaphysics</a>
+      </div>
+    </nav>
+
+    <div class="biblical">
+      <h1>Nothing unclean shall enter heaven.</h1>
+
+      <img class="img" src="purgbosh.jpg" alt="" />
+      <br />
+
+      <span class="imgtxt"
+        >(Christ In Limbo - Follower Of Hieronymous Bosch, Circa 1450
+        –1516)</span
+      >
+      <br />
+      <br>
+      <div class="tooltip">
+        Revelation 21:27<span class="tooltip-text">
+          And there shall in no wise enter into it any thing that defileth,
+          neither whatsoever worketh abomination, or maketh a lie: but they
+          which are written in the Lamb's book of life.</span
+        >
+      </div>
+      <br />
+      Thus there is no sin in heaven
+      <br />
+
+      Jesus speaks of a time after death where sins can be forgiven after this
+      life
+      <br />
+      <br />
+      <div class="tooltip">
+        Matthew 12:32<span class="tooltip-text"
+          >And whosoever speaketh a word against the Son of man, it shall be
+          forgiven him: but whosoever speaketh against the Holy Ghost, it shall
+          not be forgiven him, neither in this world, neither in the world to
+          come.</span
+        >
+      </div>
+
+      <br />
+      Sins can be forgiven in the world to come?
+      <br />
+      Must be a place before heaven
+      <br />
+      <br />
+      <div class="tooltip">
+        1 Corinthians 3:13-15<span class="tooltip-text"
+          >Every man's work shall be made manifest: for the day shall declare
+          it, because it shall be revealed by fire; and the fire shall try every
+          man's work of what sort it is. 14.If any man's work abide which he
+          hath built thereupon, he shall receive a reward. 15.If any man's work
+          shall be burned, he shall suffer loss: but he himself shall be saved;
+          yet so as by fire.
+        </span>
+      </div>
+
+      saved through fire
+      <br />
+      <br />
+      <div class="tooltip">
+        Isaiah 4:4<span class="tooltip-text">
+          When the Lord shall have washed away the filth of the daughters of
+          Zion, and shall have purged the blood of Jerusalem from the midst
+          thereof by the spirit of judgment, and by the spirit of burning.
+        </span>
+      </div>
+      washed away bloodshed through burning
+      <br />
+
+      <br />
+      <div class="tooltip">
+        Isaiah 6:6-7<span class="tooltip-text">
+          Then flew one of the seraphims unto me, having a live coal in his
+          hand, which he had taken with the tongs from off the altar: And he
+          laid it upon my mouth, and said, Lo, this hath touched thy lips; and
+          thine iniquity is taken away, and thy sin purged.
+        </span>
+      </div>
+      cleansing with a burning coal
+    </div>
+    <div id="liam">
+      <a href="#" class="button" id="backToTopBtn">Back to Top</a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("navToggle");
+        const bar = document.querySelector(".button-bar");
+        const menu = document.getElementById("mainNav");
+        if (!toggle || !bar || !menu) return;
+
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const isOpen = bar.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        menu.addEventListener("click", (e) => {
+          if (e.target.closest("a")) {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!bar.contains(e.target)) {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.focus();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

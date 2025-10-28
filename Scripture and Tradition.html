@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Scripture and Tradition.css" />
+    <link rel="stylesheet" href="Mainpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Scripture and Tradition</title>
+  </head>
+  <body>
+    <div id="banner">
+      <h1 id="bannertxt">
+        Scripture <br />and <br />
+        Tradition
+      </h1>
+      <div id="box1">
+        <h2 id="h2">A Biblical defense of Catholicism</h2>
+      </div>
+    </div>
+    <nav class="button-bar" role="navigation" aria-label="Main">
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="mainNav"
+        aria-label="Open menu"
+      >
+        ☰ Menu
+      </button>
+
+      <div class="button-container" id="mainNav">
+      <a class="button" href="index.html">Worship and Art</a>
+        <a class="button" href="Information.html">Sinless Mary</a>
+        <a class="button" href="Intercession.html">Intercession</a>
+        <a class="button" href="Peters Primacy.html">Peter's Primacy as Pope</a>
+        <a class="button" href="Eucharist.html">Eucharist</a>
+        <a class="button" href="Confession.html">Confession</a>
+        <a class="button" href="Purgatory.html">Purgatory</a>
+        <a class="button" href="Salvation.html">Salvation</a>
+        <a class="button" href="Divorce.html">Divorce</a>
+        <a class="button" href="papact.html">Metaphysics</a>
+      </div>
+    </nav>
+
+    <div class="biblical">
+      <br />
+      <img class="img" src="Bible-King-James-Version-1611.webp" alt="" />
+      <br />
+      Numerous verses contradict Sola Scriptura
+      <br />
+      <div class="tooltip">
+        2 Thessalonians 2:15
+        <span class="tooltip-text">
+          Therefore, brethren, stand fast, and hold the traditions which ye have
+          been taught, whether by word, or our epistle</span
+        >
+      </div>
+      <br />
+      <div class="tooltip">
+        2 Thessalonians 3:6
+        <span class="tooltip-text">
+          Now we command you, brethren, in the name of our Lord Jesus Christ,
+          that ye withdraw yourselves from every brother that walketh
+          disorderly, and not after the tradition which he received of us.</span
+        >
+      </div>
+      <br />
+      <div class="tooltip">
+        1 Corinthians 11:2
+        <span class="tooltip-text">
+          Now I praise you, brethren, that ye remember me in all things, and
+          keep the ordinances, as I delivered them to you.</span
+        >
+      </div>
+      <br />
+      <div class="tooltip">
+        Acts 20:28
+        <span class="tooltip-text">
+          Take heed therefore unto yourselves, and to all the flock, over the
+          which the Holy Ghost hath made you overseers, to feed the church of
+          God, which he hath purchased with his own blood.</span
+        >
+      </div>
+      <br />
+      <div class="tooltip">
+        1 Timothy 3:15
+        <span class="tooltip-text">
+          But if I tarry long, that thou mayest know how thou oughtest to behave
+          thyself in the house of God, which is the church of the living God,
+          the pillar and ground of the truth</span
+        >
+      </div>
+      <br />
+      <br />
+      Jews did not agree on the complete old testament canon at the time of
+      Christ. So why do protestants look to Jews on confirming their old
+      testament?
+      <br />
+      
+      Why are 7 books removed?
+      <br />
+      Luther also tried to remove Hebrews, James, Jude, and Revelation.
+    
+    </div>
+    <br />
+    <div id="liam">
+      <a href="#" class="button" id="backToTopBtn">Back to Top</a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("navToggle");
+        if (!toggle) return;
+
+        const bar = toggle.closest(".button-bar");
+        const menu = document.getElementById("mainNav");
+        if (!bar || !menu) return;
+
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const isOpen = bar.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        menu.addEventListener("click", (e) => {
+          if (e.target.closest("a")) {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!bar.contains(e.target)) {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.focus();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

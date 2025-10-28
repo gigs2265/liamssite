@@ -1,0 +1,538 @@
+html{
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img { max-width: 100%; height: auto; }
+
+
+
+#banner{
+  width: 100%;
+  min-height: 50vh;              
+  background-image: url(joseph-heintz-the-younger-st-anthony-of-padua-the-miracle-of-the-mule.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;         
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+body{
+  margin: 0;
+  background-color: #ffecd7e0;
+  background-size: cover;
+}
+#bannertxt{
+  font-size: clamp(60px, 8vw, 150px);
+  color: rgb(255, 215, 0);
+  width: auto;                   
+  letter-spacing: 10px;
+ text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.85),
+    -2px -2px 4px rgba(0, 0, 0, 0.85);
+  -webkit-text-stroke: 1px black;
+    background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
+
+  margin-top: 0.5rem;
+}
+#box1{
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: bolder ;
+  max-width: 90ch;
+  text-align: center;
+  color: rgb(255, 215, 0);
+   text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.85),
+    -2px -2px 4px rgba(0, 0, 0, 0.85);
+  -webkit-text-stroke: 1px black;
+    background-color: rgba(0, 0, 0, 0.4);
+  padding: 0;
+  border-radius: 8px;
+
+  margin-top: 0.5rem;
+}
+
+
+#box2{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(18px, 4vw, 40px);
+    color: rgba(255, 255, 255, 0.788);
+    background: #442525;
+    border-radius: 60px;
+    border-color: chocolate;
+    border-style: groove;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    width: 900px;
+    margin: 20px auto; }
+
+    #box3 {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: clamp(18px, 4vw, 40px);
+        color: rgba(0, 0, 0, 0.945);
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        font-weight: bold;
+
+        background-image: url(biblepage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 60px;
+        border: 5px solid #61676b;
+        border-style: groove;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+        transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        width: 1500px;
+        margin: 20px auto;}
+
+        .biblical {
+  box-sizing: border-box;
+  display: block;
+  width: min(92%, 950px);
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+
+ 
+  background: linear-gradient(145deg, #fff6e0 0%, #f4d890 100%);
+  border: 2px solid rgba(139, 115, 0, 0.8);
+  border-radius: 16px;
+
+ 
+  color: #2b1b00;
+  font-family: "Georgia", serif;
+   font-size: clamp(1rem, 2vw, 1.6rem);
+  line-height: 1.8;
+  text-align: center;
+  text-shadow:
+    1px 1px 2px rgba(255, 255, 255, 0.4),
+    0 0 8px rgba(255, 215, 0, 0.3);
+
+ 
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.25),
+    inset 0 1px 5px rgba(255, 255, 255, 0.6),
+    inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+
+  
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 3px,
+      transparent 5px
+    ),
+    linear-gradient(145deg, #f6e5b8 0%, #e9c86c 100%);
+
+  transition: all 0.3s ease;
+  overflow-wrap: break-word;
+}
+
+
+.biblical > * {
+  max-width: 100%;
+}
+
+
+.biblical > * {
+  max-width: 100%;
+}
+
+        
+        #liam {
+            flex-direction: column;
+        justify-content: center;
+        text-align: center;
+       font-size: clamp(18px, 4.5vw, 24px);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgba(0, 0, 0, 0.788);
+        
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+        transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        width: 1500px;
+        margin: 20px auto;
+        }
+    
+        
+
+        .h1{
+    font-size: clamp(18px, 6vw, 28px);
+  }  
+  .h2{
+    font-size: clamp(18px, 6vw, 28px);
+  }  
+
+.img,
+.imgf {
+  display: block;
+  width: min(100%, 400px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+ .button-container{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap: 12px;             
+  padding: 16px 20px;
+  box-sizing:border-box;
+  width: 100%;
+}
+.parent-container {
+   
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;            
+    width: 100%;           
+  }
+.button{
+  display:inline-block;
+  background-color:#1b1b1b;
+  color: rgb(255, 215, 0);
+  text-decoration:none;
+  font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+  font-size: clamp(30px, 2.5vw, 22px); 
+  padding: 10px 14px;
+  line-height: 1.1;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,.3);
+  transition: background-color .3s, transform .2s, box-shadow .2s;
+}
+
+
+.button:hover{
+  background-color:#666060;
+  transform: translateY(-1px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0,0,0,.4);
+}
+
+.button:active{
+  background-color:#d4af37;
+  transform: translateY(0) scale(.98);
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+.button-bar{
+  background-color:#1b1b1b;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  display:flex;
+  justify-content:center;
+}
+    
+   
+
+    
+    
+ 
+
+    .link {
+        text-align: center; 
+        margin-top: 20px; 
+      }
+      
+      .link a {
+        text-decoration: none; 
+        color: rgba(129, 33, 30, 0.788); 
+        font-size: clamp(18px, 6vw, 28px);
+         text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      .link a:hover {
+        text-decoration: underline; 
+        color: rgba(255, 255, 255, 0.555); 
+      }
+     .highlight {
+        font-size: clamp(18px, 6vw, 28px);
+    color: rgb(165, 39, 39);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.493), 0 0 10px rgba(255, 255, 255, 0.712);
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+     } 
+     .highi {
+        font-size: clamp(18px, 6vw, 28px);
+        color: rgba(233, 9, 9, 0.815);
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.493), 0 0 10px rgba(255, 255, 255, 0.712);
+        transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        font-style: italic;
+        
+
+     }
+     .ital {
+        font-style: italic;
+     }
+
+
+        .regwords {
+            color: rgb(0, 0, 0);
+            font-style:normal;
+            font-family:  Romanesco;
+            font-size: clamp(18px, 6vw, 28px);
+            font-weight: bold;
+
+        }
+        .tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(165, 39, 39);
+  text-shadow: 0 0 15px rgba(255,255,255,.493), 0 0 10px rgba(255,255,255,.712);
+  outline: none;
+}
+
+
+.tooltip .tooltip-text {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+
+  
+  box-sizing: border-box;
+  max-width: min(95vw, 42rem);   
+  max-height: 70vh;
+  overflow: auto;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: left;
+  line-height: 1.6;
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
+  white-space: normal;
+  word-break: break-word;
+}
+
+
+.tooltip:hover .tooltip-text,
+.tooltip:focus-within .tooltip-text,
+.tooltip[data-open="true"] .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+  .tooltip .tooltip-text {
+    bottom: auto;
+    top: calc(100% + 8px);
+  }
+}
+
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.85);
+  bottom: -16px;
+}
+
+@media (max-width: 600px) {
+  .tooltip .tooltip-text::after {
+    border-top-color: transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.85);
+    top: -16px;
+    bottom: auto;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .tooltip .tooltip-text {
+    max-width: min(80vw, 64rem);  
+    font-size: clamp(1.05rem, 1vw, 1.35rem);
+    padding: 1.25rem 1.5rem;
+  }
+
+  .tooltip .tooltip-text::after {
+    border-width: 10px;
+    bottom: -20px;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .tooltip .tooltip-text {
+    transition: none;
+  }
+}
+        
+        
+/* Tablets & down */
+@media (max-width: 768px) {
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+.h2{
+  font-size: clamp(18px, 6vw, 28px);
+}
+  
+
+  #liam,
+  .title,
+  .parent-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  
+   .img,
+  .imgf {
+    width: min(100%, 400px);
+  }
+}
+
+ 
+  .button-bar{
+    width: 100%;             
+    margin-left: 0;           
+    margin-right: 0;
+    border-radius: 0;
+    padding: 8px 0;
+  }
+
+  
+  [style*="width: 1500px"],
+  [style*="width:1600px"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+
+/* Phones */
+@media (max-width: 480px) {
+  
+  html, body { width: 100%; overflow-x: hidden; }
+
+  
+}
+
+.button-bar { position: relative; }
+
+
+.nav-toggle{
+  display: none;                 
+  background: #1b1b1b;
+  color: rgb(255,215,0);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: clamp(16px, 4.5vw, 20px);
+  cursor: pointer;
+  margin: 8px 10px;
+}
+
+
+@media (max-width: 900px){
+  .nav-toggle{ display: inline-block; }
+
+  
+  .button-bar{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    padding: 8px 10px;
+  }
+
+  
+  .button-bar > .button-container{
+    display: none;               
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background: #1b1b1b;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    padding: 6px 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    z-index: 1000;
+  }
+
+  
+  .button-bar.open > .button-container{ display: flex; }
+
+  
+  .button-bar > .button-container .button{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(15px, 4.2vw, 18px);
+    line-height: 1.2;
+    padding: 10px 12px;
+    min-height: 44px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .button-bar > .button-container .button + .button{
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+}
+
+
+@media (min-width: 901px){
+  #mainNav{ display: flex !important; }
+}
+
+
+@media (prefers-reduced-motion: reduce){
+  .button, .nav-toggle, .button-container { transition: none !important; }
+}
+.tooltip > .tooltip-text{
+  display: block;                     
+  width: min(94vw, 56rem);           
+  max-width: none;                    
+  white-space: normal;
+  word-break: break-word;
+}
+
+
+@media (min-width: 992px){
+  .tooltip > .tooltip-text{
+    line-height: 1.65;
+    padding: 1.1rem 1.4rem;
+    text-align: left;
+  }
+}
+@media (max-width: 600px){
+  .tooltip > .tooltip-text{
+    position: fixed;
+    left: 50%;
+    bottom: 12px;
+    top: auto;
+    transform: translateX(-50%);
+    width: min(94vw, 56rem);
+    max-height: 70vh;
+  }
+  .tooltip > .tooltip-text::after{ display:none; }
+}
+

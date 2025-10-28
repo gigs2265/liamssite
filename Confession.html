@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession</title>
+    <link rel="stylesheet" href="Confession.css">
+    <link rel="stylesheet" href="Mainpage.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="parent-container">
+  <div id="banner">
+    <h1 id="bannertxt">
+        Confession
+    </h1>
+    <div id="box1">A Biblical defense of Catholicism</div>
+  </div>
+<nav class="button-bar" role="navigation" aria-label="Main">
+
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+    ☰ Menu
+  </button>
+
+
+  <div class="button-container" id="mainNav">
+    <a class="button" href="index.html">Worship and Art</a>
+    <a class="button" href="Information.html">Sinless Mary</a>
+    <a class="button" href="Intercession.html">Intercession</a>
+    <a class="button" href="Peters Primacy.html">Peter's Primacy as Pope</a>
+    <a class="button" href="Scripture and Tradition.html">Scripture and Tradition</a>
+    <a class="button" href="Eucharist.html">Eucharist</a>
+    <a class="button" href="Purgatory.html">Purgatory</a>
+    <a class="button" href="Salvation.html">Salvation</a>
+    <a class="button" href="Divorce.html">Divorce</a>
+    <a class="button" href="papact.html">Metaphysics</a>
+  </div>
+</nav>
+
+    <div class="biblical"  ><h1>Ability of the church given by Christ</h1>
+        <div class="img"><img src="confessing.jpg" alt=""></div>
+        <br>
+       <span class="ital">"Then said Jesus to them again, Peace be unto you: as my Father hath sent me,
+        even so send I you. And when he had said this, he breathed on them, and saith unto them,
+        Receive ye the Holy Ghost: Whose soever sins ye remit, they are remitted unto them; and
+        whose soever sins ye retain, they are retained."</span> 
+       <br>
+       -John 20:21-23
+       
+      <div id="liam">
+      <a href="#" class="button" id="backToTopBtn">Back to Top</a>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('navToggle');
+  const bar    = document.querySelector('.button-bar');
+  const menu   = document.getElementById('mainNav');
+  if (!toggle || !bar || !menu) return;
+
+  
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = bar.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  menu.addEventListener('click', (e) => {
+    if (e.target.closest('a')) {
+      bar.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+
+  document.addEventListener('click', (e) => {
+    if (!bar.contains(e.target)) {
+      bar.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      bar.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
+  });
+});
+</script>
+
+    
+</body>
+
+</html>

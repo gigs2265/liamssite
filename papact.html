@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="papact.css" />
+    <title>Metaphysics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Mainpage.css" />
+  </head>
+  <body>
+    <div id="banner">
+      <h1 id="bannertxt">Metaphysics</h1>
+      <div id="box1">A Biblical defense of Catholicism</div>
+    </div>
+    <div class="parent-container">
+      <nav class="button-bar" role="navigation" aria-label="Main">
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open menu"
+        >
+          ☰ Menu
+        </button>
+        <div class="button-container" id="mainNav">
+          <a class="button" href="index.html">Worship and Art</a>
+          <a class="button" href="Information.html">Sinless Mary</a>
+          <a class="button" href="Intercession.html">Intercession</a>
+          <a class="button" href="Peters Primacy.html"
+            >Peter's Primacy as Pope</a
+          >
+          <a class="button" href="Scripture and Tradition.html"
+            >Scripture and Tradition</a
+          >
+          <a class="button" href="Eucharist.html">Eucharist</a>
+          <a class="button" href="Confession.html">Confession</a>
+          <a class="button" href="Purgatory.html">Purgatory</a>
+          <a class="button" href="Salvation.html">Salvation</a>
+          <a class="button" href="Divorce.html">Divorce</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="biblical">
+      <section class="biblical">
+      <h3>Syllogism for the Immateriality of the Intellect</h3>
+      <ol class="canon-list">
+        <li>
+          Formal thought processes can have an exact or unambiguous conceptual
+          content.
+        </li>
+        <li>
+          Nothing material can have an exact or unambiguous conceptual content.
+        </li>
+        <li>Therefore, formal thought processes are not material.</li>
+      </ol></section>
+    
+  
+
+    <div class="biblical">
+      <h2>Syllogism for God</h2>
+      <ol class="canon-list">
+        <li>Is change a real feature of this universe?</li>
+        <li>Is change the actualization of a potential?</li>
+        <li>
+          Can no change be actualized unless something already actualizes it?
+        </li>
+        <li>
+          Such changes observed would constitute a hierarchical causal series.
+        </li>
+        <li>
+          Such a series cannot regress infinitely due to that being an
+          absurdity.
+        </li>
+        <li>There must be a primary mover/pure actualizer.</li>
+        <li>We can draw conclusions about this primary mover.</li>
+      </ol></div>
+     
+      <section class="biblical">
+        <h2>Physical Evidence</h2>
+        <a href="https://youtu.be/OElbxDPsqpw?feature=shared"
+          >Shroud of Turin</a
+        >
+        <br />
+        <a href="https://youtu.be/YZHYLyxz7kM?feature=shared"
+          >Our Lady of Zeitoun</a
+        >
+        <br>
+        <a
+          href="https://youtube.com/shorts/0_WtzCnFv68?feature=shared
+"
+          >Our Lady of Guadalupe
+        </a>
+      </section>
+      <a href="#" class="button" id="backToTopBtn">Back to Top</a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("navToggle");
+        const bar = document.querySelector(".button-bar");
+        const menu = document.getElementById("mainNav");
+        if (!toggle || !bar || !menu) return;
+
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const isOpen = bar.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        menu.addEventListener("click", (e) => {
+          if (e.target.closest("a")) {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!bar.contains(e.target)) {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            bar.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.focus();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
