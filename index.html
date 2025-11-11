@@ -70,7 +70,9 @@
   <div class="parent-container">
     <header id="banner">
       <h1 id="bannertxt">Worship and Art</h1>
-      <div id="box1">A Biblical Defense of Catholicism</div>
+      <div id="box1">
+        <h2 id="h2">A Biblical Defense of Catholicism</h2>
+      </div>
     </header>
 
    <nav class="button-bar" role="navigation" aria-label="Main">
@@ -445,18 +447,21 @@ While creating religious images is permitted, their purpose is to aid in devotio
     <script>
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('navToggle');
-  const bar    = document.querySelector('.button-bar');
-  const menu   = document.getElementById('mainNav');
-  if (!toggle || !bar || !menu) return;
+  if (!toggle) { console.warn('No #navToggle found'); return; }
+
+  const bar  = toggle.closest('.button-bar');
+  const menu = document.getElementById('mainNav');
+  if (!bar || !menu) { console.warn('Missing .button-bar or #mainNav'); return; }
 
 
   toggle.addEventListener('click', (e) => {
     e.stopPropagation();
     const isOpen = bar.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(isOpen));
+    console.log('menu toggled:', isOpen);
   });
 
- 
+
   menu.addEventListener('click', (e) => {
     if (e.target.closest('a')) {
       bar.classList.remove('open');
@@ -464,7 +469,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
- 
+
   document.addEventListener('click', (e) => {
     if (!bar.contains(e.target)) {
       bar.classList.remove('open');
