@@ -26,8 +26,8 @@ body{
 #bannertxt{
   font-size: clamp(50px, 8vw, 150px);
   color: rgb(255, 215, 0);
-  width: auto;                   
-  letter-spacing: 10px;
+  width: auto;
+  letter-spacing: clamp(2px, 1.5vw, 10px);
  text-shadow:
     2px 2px 4px rgba(0, 0, 0, 0.85),
     -2px -2px 4px rgba(0, 0, 0, 0.85);
@@ -188,11 +188,13 @@ body{
     text-align: center;
     font-size: clamp(18px, 4.5vw, 24px);
     color: rgba(0, 0, 0, 0.788);
-    
+
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
     transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    width: 1500px;
+    width: min(95%, 1500px);
     margin: 20px auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
     }
    .tooltip {
   position: relative;
