@@ -593,6 +593,61 @@ h3 {
   .button, .nav-toggle, .button-container { transition: none !important; }
 }
 
-       
-    
+/* PDF Download Box Styles */
+.pdf-download-box {
+  margin: 2rem 0;
+  padding: clamp(1rem, 4vw, 1.5rem);
+  background: linear-gradient(145deg, #f6e5b8 0%, #e9c86c 100%);
+  border: 2px solid rgba(139, 115, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.pdf-title {
+  margin-top: 0;
+  color: #2b1b00;
+  font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+  word-wrap: break-word;
+}
+
+.pdf-description {
+  color: #2b1b00;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.6;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  word-wrap: break-word;
+}
+
+.pdf-button {
+  display: inline-block;
+  width: 100%;
+  max-width: 280px;
+  padding: clamp(0.65rem, 3vw, 0.75rem) clamp(1rem, 4vw, 1.5rem);
+  background: #000000;
+  color: rgb(255, 215, 0);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 3.5vw, 1rem);
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.pdf-button:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 
